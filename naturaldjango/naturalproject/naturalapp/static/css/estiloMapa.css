@@ -1,0 +1,19 @@
+/* Estilos personalizados */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #7ed957, #9DD0D1);
+}
+
+h1 {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.mi_mapa {
+    height: 400px;
+    width: 600px;
+}

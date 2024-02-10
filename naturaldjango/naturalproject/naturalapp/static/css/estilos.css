@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'sunday grapes';
+    src: url('FUENTES/sunday grapes') format('ttf');
+    /* agregar más formatos de fuente si es necesario */
+}
+
+
+/* encabezado */
+h1 {
+    color: #7ed957;
+    font-size: 80px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 0px 14px;
+    text-align: center;
+    font-family: 'sunday grapes', Arial;
+    -webkit-text-stroke: 0.1px black;
+}
+
+h2 {
+    margin-bottom: 150px;
+}
+
+/*fondo*/
+body{
+    background: #FFFFFF;
+    text-align: center; 
+}
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+/* cuerpo */
+h3{
+    margin: 0px 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    font: oblique bold 112% cursive;
+}
+
+p {
+    margin: 0px 80px;
+    text-align: center;
+    line-height: 180%;
+    font: oblique bold 100% cursive;
+    font-weight: normal;
+}
+
+.descripcion {
+    padding-top: 0px;
+    padding-bottom: 45px;
+}
+
+/* boton */
+.btn_sucesos{
+    color: #000000;
+    background: linear-gradient(to right, #7ed957, #9DD0D1);
+    display: inline-block;
+    padding: 13px 70px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font: oblique bold 90% cursive;
+}
+.btn_sucesos:hover {
+    border-color: #ce1d61;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 100%;
+    }
+
+    h3{
+        font-size: 95%;
+    }
+
+    p{
+        font-size: 85%;
+    }
+  }

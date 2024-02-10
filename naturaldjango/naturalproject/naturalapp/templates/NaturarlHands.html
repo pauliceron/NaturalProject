@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--el nombre de la pagina-->
+    <title>NaturalHands</title>
+    
+    <!--el enlace con css-->
+    <link rel="stylesheet" href="../static/css/estilos.css">
+    <link rel="stylesheet" href="../static/css/NavBar.css">
+</head>
+
+<body>
+    <!--Encabezado-->
+    <section> 
+        <header>
+            <div class="content">
+                <div class="menu container">
+                    <a href="HTML/CuentaUsuario.html" class="logo">logo</a>
+                    <input type="checkbox" id="menu"/>
+                    <label for="menu">
+                        <img src="./IMAGENES/img2.png" class="menu_icono" alt="">
+                    </label>
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="./NaturarlHands.html" id="init">Inicio</a></li>
+                            <li><a href="./Mapa.html" id="map">Mapa</a></li>
+                            <li><a href="./Informacion.html" id="info">Informacion</a></li>
+                            <li><a href="{%url 'RegistroUsuario'%}" id="cuenta">Cuenta</a></li>
+                            <li><a href="{%url 'Formulario'%}" id="empresas" >Empresas</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <img src="IMAGENES/img1.png" alt="Descripción de la imagen">
+
+        <h1>Natural Hands</h1>
+        <h2>Plataforma de turismo ambiental para el municipio San Rafael</h2>
+
+        <!--cuerpo o centro-->
+        <h3>Bienvenida/o a Natural Hands</h3>
+        <p>
+            Visita la naturaleza y cuida de ella en el proceso. 
+        </p>
+        <p class="descripcion"> 
+            Haz clic en el siguiente boton y accede al mapa del municipio de
+            San Rafael - Antioquia con sus sitios turisticos y los depositos de
+            basura al rededor de cada zona.
+        </p>
+
+
+        <!-- boton -->
+        <nav class="lineaBoton">
+            <button class="btn_sucesos" onclick="location.href='./Mapa.html'">
+                IR AL MAPA
+            </button>
+        </nav>
+
+    </section>
+
+    <script src="./JS/NaturalHands.js"></script>
+</body>
+</html>

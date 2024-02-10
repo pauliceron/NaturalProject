@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--el nombre de la pagina-->
+    <title>Informacion</title>
+    
+    <!--el enlace con css-->
+    <link rel="stylesheet" href="CSS/Informacion.css">
+    <link rel="stylesheet" href="CSS/NavBar.css">
+    <link rel="stylesheet" href="CSS/formularioContacto.css">
+</head>
+
+<body>
+     <!--Encabezado-->
+    <section> 
+        <header>
+            <div class="content">
+                <div class="menu container">
+                    <a href="HTML/CuentaUsuario.html" class="logo">logo</a>
+                    <input type="checkbox" id="menu"/>
+                    <label for="menu">
+                        <img src="./IMAGENES/img2.png" class="menu_icono" alt="">
+                    </label>
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="./NaturarlHands.html" id="init">Inicio</a></li>
+                            <li><a href="./Mapa.html" id="map">Mapa</a></li>
+                            <li><a href="./Informacion.html" id="info">Informacion</a></li>
+                            <li><a href="./RegistroUsuario.html" id="cuenta">Cuenta</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <section id="sec1">
+        <div class="contenedor-texto">
+            <img src="IMAGENES/img1.png" alt="Descripción de la imagen">
+            <h2>¿Quieres agregar tu establecimiento al mapa también?</h2>
+            <p>¡Entonces, completa el formulario! Inicia sesión o regístrate si aun no lo has hecho.</p>
+            <li id="sesion"><a href="./InicioSesion.html">Iniciar Sesión AQUI</a></li>
+            <li id="registro"><a href="./RegistroUsuario.html">Registrarse AQUI</a></li>
+            <li id="formulario"><a href="./Formulario.html">Formulario AQUI</a></li>
+        </div>
+    </section>
+    <section id="sect2">
+        <div>
+            <h2>Hotel Kikua</h2>
+        </div>
+    </section>
+
+    <div id="contenedor-secciones">
+        <!-- Aquí se agregarán las secciones dinámicamente -->
+    </div>
+
+    <script>
+        // Crear una nueva sección y agregarla al contenedor
+        var contenedor = document.getElementById('contenedor-secciones');
+        var nuevaSeccion = document.createElement('section');
+        nuevaSeccion.innerHTML = 
+            <div class="contenedor-texto">
+                <img src="IMAGENES/img1.png" alt="Descripción de la imagen"/>
+                <h2>¿Quieres agregar tu establecimiento al mapa también?</h2>
+                <p>¡Entonces, completa el formulario! Inicia sesión o regístrate si aún no lo has hecho.</p>
+            </div>
+        ;
+        contenedor.appendChild(nuevaSeccion);
+    </script>
+
+    <form id="form" action="" class="form">
+        <h3 class="title">¡Escrìbenos!</h3>
+        <label>
+            <input placeholder="correo electronico" type="text"
+                id="email">
+        </label>
+        <label>
+            <textarea name="mensaje" id="messege" cols="122" rows="7" placeholder="Mensaje"></textarea>
+        </label>
+
+        <button id="boton">Enviar mensaje</button>
+    </form>
+
+    <script src="./JS/Informacion.js"></script>
+</body>
+</html>

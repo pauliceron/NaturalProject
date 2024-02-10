@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../static/css/FormRegis.css">
+
+</head>
+<body>
+    <form id="miFormulario" action="/HTML/Informacion.html">
+        <h1 class="title">Completa el formulario con la informacion necesaria</h1>
+
+        <fieldset>
+            <legend id="Pregunta">¿Que tipo de turismo ofreces?</legend>
+            <label><input id="acuatico" type="radio" name="turismo" value="acuatico">Acuatico </label>
+            <label><input id="terrestre" type="radio" name="turismo" value="terrestre">Terrestre </label>
+            <label><input id="ambos" type="radio" name="turismo" value="ambos">Ambos </label>
+        </fieldset>
+
+        <label for="nombre-establecimiento">Nombre del Establecimiento:</label>
+        <input type="text" id="nombre-establecimiento" required>
+
+        <label for="nombre-encargado" id="name">Nombre del Encargado:</label>
+        <input type="text" id="encargadoEmpresa" name="nombreEmpresa" required>
+
+        <label for="ubicacion">Ubicación del Lugar:</label>
+        <input type="text" id="ubicacionEmpresa" name="ubicacionEmpresa" required>
+ 
+        <label for="numero-contacto">Número de Contacto:</label>
+        <input type="tel" id="numeroContacto" name="numeroContacto" pattern="[0-9]{10}" required>
+
+        <label for="imagenes-lugar">Imágenes del Lugar:</label>
+        <input type="file" id="imagenes-lugar" accept="image/*" multiple>
+
+        <button class="button" onclick= "location.href='./informacion.html'">
+            Enviar
+        </button>
+    </form>
+
+    <script src="./JS/formulario.js"></script>
+</body>
+</html>

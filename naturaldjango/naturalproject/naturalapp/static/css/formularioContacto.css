@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+form .title {
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 25px;
+}
+
+.messe {
+    font: 70%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #7ed957, #9DD0D1);
+    text-align: left;
+    padding: 20px 25px;
+    margin: 50px;
+    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+}
+
+form label {
+    margin-bottom: 35px;
+}
+
+form label input {
+    outline: none;
+    border: none;
+    color: #252525;
+    border: solid 1px #ce1d61;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 250px;
+    font-size: 18px;
+}
+
+form label textarea {
+    outline: none;
+    color: #252525;
+    border: solid 1px #ce1d61;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+form button {
+    color: #000000;
+    border: solid 1px #ce1d61;
+    background: floralwhite;
+    padding: 10px 15px;
+    margin: auto;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    color: #ce1d61;
+}
